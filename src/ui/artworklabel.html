@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artwork Label</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      main {
+        display: flex;
+        flex-direction: row;
+        padding-inline: 1rem;
+        padding-block: 1rem;
+        gap: 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+      }
+
+      .main_chip {
+        flex: 0 0 300px;
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+        justify-content: space-between;
+      }
+      .main_chip_left {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+      }
+      .main_chip_left :first-child {
+        font-weight: 600;
+      }
+      .main_chip_right img {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <section class="main_chip">
+        <article class="main_chip_left">
+          <aside class="main_chip_left_item">ArtworkName, Year</aside>
+          <aside class="main_chip_left_item">Artist Name</aside>
+          <aside class="main_chip_left_item">Medium</aside>
+          <aside class="main_chip_left_item">Size</aside>
+        </article>
+        <article class="main_chip_right">
+          <img src="./banner.jpg" alt="Qrcode" />
+        </article>
+      </section>
+      <section class="main_chip">
+        <article class="main_chip_left">
+          <aside class="main_chip_left_item">ArtworkName, Year</aside>
+          <aside class="main_chip_left_item">Artist Name</aside>
+          <aside class="main_chip_left_item">Medium</aside>
+          <aside class="main_chip_left_item">Size</aside>
+        </article>
+        <article class="main_chip_right">
+          <img src="./banner.jpg" alt="Qrcode" />
+        </article>
+      </section>
+      <section class="main_chip">
+        <article class="main_chip_left">
+          <aside class="main_chip_left_item">ArtworkName, Year</aside>
+          <aside class="main_chip_left_item">Artist Name</aside>
+          <aside class="main_chip_left_item">Medium</aside>
+          <aside class="main_chip_left_item">Size</aside>
+        </article>
+        <article class="main_chip_right">
+          <img src="./banner.jpg" alt="Qrcode" />
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

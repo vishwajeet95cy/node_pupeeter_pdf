@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        padding-inline: 1rem;
+        padding-block: 1rem;
+        gap: 1rem;
+      }
+      .invoice_first_section img {
+        width: 100%;
+        height: 25vh;
+      }
+      .invoice_second_section {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .invoice_second_section_title {
+        margin: 0;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+      .invoice_second_section_detail span {
+        text-transform: uppercase;
+      }
+      .invoice_third_section {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 1rem;
+      }
+      .invoice_third_section_right {
+        justify-self: center;
+      }
+      .invoice_address {
+        font-weight: 500;
+        font-size: 1rem;
+      }
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td,
+      th {
+        border-bottom: 1px solid #dddddd;
+        text-align: left;
+        padding-block: 8px;
+      }
+      .invoice_fourth_section {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .invoice_fourth_section_title {
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+      }
+      .invoice_fourth_section_table_container_first {
+        display: flex;
+        gap: 0.8rem;
+        align-items: center;
+      }
+      .invoice_fourth_section_table_container_first img {
+        width: 40px;
+        height: 40px;
+      }
+      .invoice_fourth_section_table_container_first p {
+        margin: 0;
+      }
+      .invoice_fifth_section {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        align-items: flex-end;
+      }
+      .invoice_fifth_section_item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 20%;
+      }
+      .invoice_fifth_section_border {
+        height: 2px;
+        background-color: #000;
+        width: 10%;
+      }
+      .invoice_fifth_section_item_bold {
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="invoice_first_section">
+        <img src="./banner.jpg" alt="banner" />
+      </section>
+      <section class="invoice_second_section">
+        <h1 class="invoice_second_section_title">Invoice #15</h1>
+        <aside class="invoice_second_section_detail">
+          <aside><span>Invoice Date:</span> February 14, 2024</aside>
+          <aside><span>Due Date:</span> February 29, 2024</aside>
+        </aside>
+      </section>
+      <section class="invoice_third_section">
+        <article class="invoice_third_section_left">
+          <aside class="invoice_address">FROM:</aside>
+          <aside class="invoice_address">Vishal Kumar</aside>
+          <aside class="invoice_address">tetshjl, bbbd</aside>
+          <aside class="invoice_address">7894561232</aside>
+          <aside class="invoice_address">main@gmail.com</aside>
+        </article>
+        <article class="invoice_third_section_right">
+          <aside class="invoice_address">TO:</aside>
+          <aside class="invoice_address">Vishwa</aside>
+          <aside class="invoice_address">test@gmail.com</aside>
+        </article>
+      </section>
+      <section class="invoice_fourth_section">
+        <h1 class="invoice_fourth_section_title">Invoice Items:</h1>
+        <article class="invoice_fourth_section_table_container">
+          <table>
+            <tr>
+              <th>Artwork</th>
+              <th>Original Price</th>
+              <th>Discount</th>
+              <th>Sale Price</th>
+              <th>Tax</th>
+            </tr>
+            <tr>
+              <td>
+                <article class="invoice_fourth_section_table_container_first">
+                  <aside>
+                    <img src="./banner.jpg" alt="Hllo" />
+                  </aside>
+                  <aside>
+                    <p>Hello Main Text</p>
+                    <p>64 x 64 in</p>
+                  </aside>
+                </article>
+              </td>
+              <td>Maria Anders</td>
+              <td>Germany</td>
+              <td>Germany</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>
+                <article class="invoice_fourth_section_table_container_first">
+                  <aside>
+                    <img src="./banner.jpg" alt="Hllo" />
+                  </aside>
+                  <aside>
+                    <p>Hello Main Text</p>
+                    <p>64 x 64 in</p>
+                  </aside>
+                </article>
+              </td>
+              <td>Francisco Chang</td>
+              <td>Germany</td>
+              <td>Germany</td>
+              <td>Mexico</td>
+            </tr>
+          </table>
+        </article>
+      </section>
+      <section class="invoice_fifth_section">
+        <article class="invoice_fifth_section_item">
+          <aside class="invoice_fifth_section_item_left">Sale Price:</aside>
+          <aside class="invoice_fifth_section_item_right">$1500</aside>
+        </article>
+        <article class="invoice_fifth_section_item">
+          <aside class="invoice_fifth_section_item_left">Total Tax:</aside>
+          <aside class="invoice_fifth_section_item_right">$0</aside>
+        </article>
+        <article class="invoice_fifth_section_item">
+          <aside class="invoice_fifth_section_item_left">Shipping:</aside>
+          <aside class="invoice_fifth_section_item_right">$200</aside>
+        </article>
+        <article class="invoice_fifth_section_border"></article>
+        <article
+          class="invoice_fifth_section_item invoice_fifth_section_item_bold"
+        >
+          <aside class="invoice_fifth_section_item_left">Total:</aside>
+          <aside class="invoice_fifth_section_item_right">$1700</aside>
+        </article>
+        <article class="invoice_fifth_section_item">
+          <aside class="invoice_fifth_section_item_left">Paid:</aside>
+          <aside class="invoice_fifth_section_item_right">$500</aside>
+        </article>
+        <article
+          class="invoice_fifth_section_item invoice_fifth_section_item_bold"
+        >
+          <aside class="invoice_fifth_section_item_left">Remaining:</aside>
+          <aside class="invoice_fifth_section_item_right">$1200</aside>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

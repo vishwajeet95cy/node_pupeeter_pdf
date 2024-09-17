@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authenticity Certificate</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        padding-inline: 1rem;
+        padding-block: 1rem;
+        gap: 1rem;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .section_first {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.2rem;
+      }
+      .section_first h2,
+      .section_first p {
+        margin: 0;
+      }
+      .section_first h2 {
+        font-weight: 600;
+        font-size: 1.8rem;
+      }
+      .section_second {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .section_second img {
+        width: 400px;
+        height: 400px;
+        object-fit: unset;
+      }
+      .section_third {
+        display: flex;
+        gap: 0.2rem;
+        flex-direction: column;
+      }
+      .section_fourth {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+      }
+      .section_fourth h3 {
+        text-align: center;
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+      .section_fourth_item {
+        display: flex;
+        justify-content: space-between;
+      }
+      .section_fourth_item_qrcode img {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <section class="section_first">
+        <h2>Certificate of Authencity</h2>
+        <p>This artwork is one-of-a-kind authentic, original artwork.</p>
+        <p>All copyright and reproduction rights are reserved by the artist.</p>
+      </section>
+      <section class="section_second">
+        <img src="./test.jpg" alt="Artwork" />
+      </section>
+      <section class="section_third">
+        <aside class="section_third_item">Title</aside>
+        <aside class="section_third_item">Artist Name</aside>
+        <aside class="section_third_item">Medium</aside>
+        <aside class="section_third_item">Year</aside>
+        <aside class="section_third_item">Dimension</aside>
+        <aside class="section_third_item">Edition</aside>
+        <aside class="section_third_item">Signature Position</aside>
+        <aside class="section_third_item">Certificate No.</aside>
+      </section>
+      <section class="section_fourth">
+        <h3>Special Instructions</h3>
+        <aside class="section_fourth_item">
+          <p>
+            If you special hanging or display instructions, you can include
+            this.
+          </p>
+          <aside class="section_fourth_item_qrcode">
+            <img src="./banner.jpg" alt="QrCode" />
+          </aside>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>

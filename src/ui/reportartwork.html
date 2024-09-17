@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalog</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        padding-inline: 1rem;
+        padding-block: 1rem;
+        gap: 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .image_section img {
+        width: 100%;
+        height: 500px;
+        object-fit: unset;
+      }
+      .description_section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .description_section p {
+        margin: 0;
+        font-size: 1rem;
+        text-align: center;
+      }
+      .detail_section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <section class="image_section">
+        <img src="./test.jpg" alt="Big" />
+      </section>
+      <section class="detail_section">
+        <aside class="detail_section_item">Artwork, year</aside>
+        <aside class="detail_section_item">Artist</aside>
+        <aside class="detail_section_item">Medium</aside>
+        <aside class="detail_section_item">Dimension</aside>
+        <aside class="detail_section_item">Price</aside>
+      </section>
+      <section class="description_section">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eum
+          accusamus animi praesentium error. Ad quam fugiat fugit odit earum
+          quibusdam ex delectus rem aliquam facilis, eum temporibus et ea nihil
+          aspernatur! Asperiores, nisi temporibus pariatur saepe ducimus
+          recusandae. Quod possimus veniam odit saepe veritatis ad! Laborum
+          vitae sed ex?
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
